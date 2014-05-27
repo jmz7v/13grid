@@ -267,13 +267,15 @@ body, html {
   display: block;
   max-width: 960px;
   font-size: 0;
-  min-height: 1px;
-  /*background-color: #202020;*/ }
+  background-color: #F7F7F7;
+  /* Gutter */
+  /* Reset last one */ }
   .grid .row {
     display: block;
     width: 100%;
-    background-color: #f7f7f7;
-    margin-bottom: 2rem; }
+    margin-bottom: 6.25%; }
+  .grid .row:last-child {
+    margin-bottom: 0; }
   .grid .grid_one {
     display: inline-block;
     width: 100%;
@@ -288,8 +290,6 @@ body, html {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    /*min-height: 2rem;*/
-    /*text-align: left;*/
     padding-top: 2rem;
     padding-bottom: 2rem;
     text-align: center;
@@ -297,7 +297,7 @@ body, html {
     overflow: hidden;
     background-color: #343434;
     width: 87.5%;
-    max-width: 840px; }
+    /*max-width: 840px;*/ }
   .grid .grid_onehalf {
     display: inline-block;
     width: 100%;
@@ -312,8 +312,6 @@ body, html {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    /*min-height: 2rem;*/
-    /*text-align: left;*/
     padding-top: 2rem;
     padding-bottom: 2rem;
     text-align: center;
@@ -321,7 +319,7 @@ body, html {
     overflow: hidden;
     background-color: #F8E71C;
     width: 40.625%;
-    max-width: 390px; }
+    /*max-width: 390px;*/ }
   .grid .grid_onethird {
     display: inline-block;
     width: 100%;
@@ -336,8 +334,6 @@ body, html {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    /*min-height: 2rem;*/
-    /*text-align: left;*/
     padding-top: 2rem;
     padding-bottom: 2rem;
     text-align: center;
@@ -345,7 +341,7 @@ body, html {
     overflow: hidden;
     background-color: #FEA53C;
     width: 25%;
-    max-width: 240px; }
+    /*max-width: 240px;*/ }
   .grid .grid_onefourth {
     display: inline-block;
     width: 100%;
@@ -360,8 +356,6 @@ body, html {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    /*min-height: 2rem;*/
-    /*text-align: left;*/
     padding-top: 2rem;
     padding-bottom: 2rem;
     text-align: center;
@@ -369,7 +363,7 @@ body, html {
     overflow: hidden;
     background-color: #6FCF45;
     width: 17.1875%;
-    max-width: 165px; }
+    /*max-width: 165px;*/ }
   .grid .grid_onesixth {
     display: inline-block;
     width: 100%;
@@ -384,8 +378,6 @@ body, html {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    /*min-height: 2rem;*/
-    /*text-align: left;*/
     padding-top: 2rem;
     padding-bottom: 2rem;
     text-align: center;
@@ -393,7 +385,7 @@ body, html {
     overflow: hidden;
     background-color: #00BFFA;
     width: 9.375%;
-    max-width: 90px; }
+    /*max-width: 90px;*/ }
   .grid .grid_twothirds {
     display: inline-block;
     width: 100%;
@@ -408,8 +400,6 @@ body, html {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    /*min-height: 2rem;*/
-    /*text-align: left;*/
     padding-top: 2rem;
     padding-bottom: 2rem;
     text-align: center;
@@ -417,14 +407,16 @@ body, html {
     overflow: hidden;
     background-color: #27ECBA;
     width: 56.625%;
-    max-width: 540px; }
-  .grid .grid_onehalf, .grid .grid_onethird, .grid .grid_onefourth, .grid .grid_onesixth, .grid .grid_twothirds {
-    /* Gutter */
+    /*max-width: 540px;*/ }
+  .grid .grid_onehalf,
+  .grid .grid_onethird,
+  .grid .grid_onefourth,
+  .grid .grid_onesixth,
+  .grid .grid_twothirds {
     margin-right: 6.25%; }
   .grid .grid_onehalf:last-child,
   .grid .grid_onethird:last-child,
   .grid .grid_onefourth:last-child,
   .grid .grid_onesixth:last-child,
   .grid .grid_twothirds:last-child {
-    /* Reset last one */
     margin-right: 0; }

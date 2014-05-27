@@ -4,6 +4,7 @@
 $side-padding: 15px; /*ALWAYS 15px, no matter what*/
 $side-padding: 0;
 $gutter: 6.25%; /*60px at full width*/
+$margin-between-rows: 6.25%;
 
 @mixin centerBlock() {
 	display: inline-block;
@@ -22,8 +23,6 @@ $gutter: 6.25%; /*60px at full width*/
 }
 
 @mixin commonValues() {
-	/*min-height: 2rem;*/
-	/*text-align: left;*/
 	padding-top: 2rem;
 	padding-bottom: 2rem;
 	text-align: center;
@@ -33,24 +32,20 @@ $gutter: 6.25%; /*60px at full width*/
 
 
 .grid {
-
 	@include centerBlock();
-
 	display: block;
 	max-width: 960px;
-	
 	font-size: 0;
-
-	min-height: 1px;
-
-	/*background-color: #202020;*/
-
+	background-color: #F7F7F7;
 
 	.row {
 		display: block;
 		width: 100%;
-		background-color: #f7f7f7;
-		margin-bottom: 2rem;
+		margin-bottom: $margin-between-rows;
+	}
+
+	.row:last-child {
+		margin-bottom: 0;
 	}
 
 	.grid_one {
@@ -58,86 +53,78 @@ $gutter: 6.25%; /*60px at full width*/
 		@include sidePadding();
 		@include border-box();
 		@include commonValues();
-
 		background-color: #343434;
-
 		width: 87.5%;
-		max-width: 840px;
+		/*max-width: 840px;*/
 	}
+
 	.grid_onehalf {
 		@include centerBlock();
 		@include sidePadding();
 		@include border-box();
 		@include commonValues();
-
 		background-color: #F8E71C;
-
 		width: 40.625%;
-		max-width: 390px;
+		/*max-width: 390px;*/
 	}
-
-
 
 	.grid_onethird {
 		@include centerBlock();
 		@include sidePadding();
 		@include border-box();
 		@include commonValues();
-
 		background-color: #FEA53C;
-
 		width: 25%;
-		max-width: 240px;
+		/*max-width: 240px;*/
 	}
+
 	.grid_onefourth {
 		@include centerBlock();
 		@include sidePadding();
 		@include border-box();
 		@include commonValues();
-
 		background-color: #6FCF45;
-
 		width: 17.1875%;
-		max-width: 165px;
+		/*max-width: 165px;*/
 	}
+
 	.grid_onesixth {
 		@include centerBlock();
 		@include sidePadding();
 		@include border-box();
 		@include commonValues();
-
 		background-color: #00BFFA;
-
 		width: 9.375%;
-		max-width: 90px;
+		/*max-width: 90px;*/
 	}
+
 	.grid_twothirds {
 		@include centerBlock();
 		@include sidePadding();
 		@include border-box();
 		@include commonValues();
-
 		background-color: #27ECBA;
-
 		width: 56.625%;
-		max-width: 540px;
+		/*max-width: 540px;*/
 	}
 
-
-
-	.grid_onehalf, .grid_onethird, .grid_onefourth, .grid_onesixth, .grid_twothirds {
-		/* Gutter */
+	/* Gutter */
+	.grid_onehalf,
+	.grid_onethird,
+	.grid_onefourth,
+	.grid_onesixth,
+	.grid_twothirds {
 		margin-right: $gutter;
 	}
+
+	/* Reset last one */
 	.grid_onehalf:last-child,
 	.grid_onethird:last-child,
 	.grid_onefourth:last-child,
 	.grid_onesixth:last-child,
-	.grid_twothirds:last-child,
+	.grid_twothirds:last-child
 	{
-		/* Reset last one */
 		margin-right: 0;
 	}
-
 
 }

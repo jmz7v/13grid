@@ -15,8 +15,7 @@ I’m not sure if this is the first open source 13 grid column, I started it at 
 ### To-Do
 
 - Docs for usage
-
-
+- Add media queries
 
 ## 13 columns
 
