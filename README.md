@@ -94,7 +94,7 @@ Percentage width: 56.625% — Magic number may be?
 
 ## Acknowledgements
 
-13Grid was built on top of [link](https://github.com/necolas/normalize.css/) by Nicolas Gallagher. 
+13Grid was built on top of [Normalize.css](https://github.com/necolas/normalize.css/) by Nicolas Gallagher. 
 
 13Grid uses and it was planned to use alongside [Odyssey.css](https://github.com/Jmz7v/Odyssey.scss) by Julio Montaño. 
 
