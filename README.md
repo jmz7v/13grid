@@ -21,3 +21,11 @@ The standard size for the whole grid is 960px.
 
 ## The containers
 
+### The Unit
+
+The unit is also the gutter. There are 13 units in 13Grid.
+
+Woah.
+
+It’s default width is 60px. It’s always 60px.
+
