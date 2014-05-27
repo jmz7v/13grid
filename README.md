@@ -27,11 +27,56 @@ The standard size for the whole grid is 960px.
 
 ### The Unit
 
-The unit is also the gutter. There are 13 units in 13Grid.
+The unit is also the gutter. There are 13 units in 13Grid. Woah.
 
-Woah.
+Default width @ 960px: 60px
 
-Default width @ 960px: 60px;
-Percentage width: 6.25%;
+Percentage width: 6.25%
 
+### The One
 
+Used for full content width, it’ll leave a unit of space at each side.
+
+Default width @ 960px: 840px
+
+Percentage width: 87.5%
+
+### The Half
+
+Kind of half the One.
+
+Default width @ 960px: 390px
+
+Percentage width: 40.625%
+
+### The Third
+
+Kind of a third of the One.
+
+Default width @ 960px: 240px
+
+Percentage width: 25%
+
+### The Fourth
+
+Kind of a fourth of the One.
+
+Default width @ 960px: 165px
+
+Percentage width: 17.1875%
+
+### The Sixth
+
+Kind of a sixth of the One.
+
+Default width @ 960px: 90px
+
+Percentage width: 9.375%
+
+### The Two Thirds
+
+Kind of 2 one thirds.
+
+Default width @ 960px: 540px
+
+Percentage width: 56.625% -- Magic number may be?
