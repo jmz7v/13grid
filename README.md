@@ -12,6 +12,11 @@ Because none of the current 12 column grids satisfies me. I have used Bootstrap,
 
 I’m not sure if this is the first open source 13 grid column, I started it at school without internet using Sketch and haven’t stopped since. I don’t want to Google if another one already exists.
 
+### To-Do
+
+- Docs for usage
+
+
 
 ## 13 columns
 
@@ -79,4 +84,20 @@ Kind of 2 one thirds.
 
 Default width @ 960px: 540px
 
-Percentage width: 56.625% -- Magic number may be?
+Percentage width: 56.625% — Magic number may be?
+
+
+
+
+
+
+
+## Acknowledgements
+
+13Grid was built on top of ![link](https://github.com/necolas/normalize.css/) by Nicolas Gallagher. 
+
+13Grid uses and it was planned to use alongside ![Odyssey.css](https://github.com/Jmz7v/Odyssey.scss) by Julio Montaño. 
+
+13Grid was designed in ![Sketch](http://bohemiancoding.com/sketch/).
+
+13Grid uses ![SASS](http://sass-lang.com). The compiled version of 13Grid is always up-to-date and ready to use.
