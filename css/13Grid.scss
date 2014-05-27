@@ -1,3 +1,14 @@
+/*
+ *	13Grid
+ *	https://github.com/Jmz7v/13Grid
+ *	
+ *	Made by Julio Montaño
+ *	@jmz7v
+ *	
+ *	MIT License
+ */
+
+
 @import 'normalize';
 @import 'odyssey';
 
@@ -122,8 +133,7 @@ $margin-between-rows: 6.25%;
 	.grid_onethird:last-child,
 	.grid_onefourth:last-child,
 	.grid_onesixth:last-child,
-	.grid_twothirds:last-child
-	{
+	.grid_twothirds:last-child {
 		margin-right: 0;
 	}
 
