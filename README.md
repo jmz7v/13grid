@@ -2,6 +2,10 @@
 
 A 13 column grid.
 
+![Screenshot Clean](/images/13Grid.png)
+
+
+
 ## WHY?
 
 Because none of the current 12 column grids satisfies me. I have used Bootstrap, Foundation, Pure and Toast and none of them have really convinced me.
@@ -27,5 +31,7 @@ The unit is also the gutter. There are 13 units in 13Grid.
 
 Woah.
 
-It’s default width is 60px. It’s always 60px.
+Default width @ 960px: 60px;
+Percentage width: 6.25%;
+
 
