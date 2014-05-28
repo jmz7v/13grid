@@ -93,7 +93,7 @@ Percentage width: 56.625% — Magic number may be?
 Modify this to fit your needs
 
 ```sass
-$content-max-width: 960px;
+$content-max-width: 960px; // From Odyssey.scss
 $side-padding: 15px;
 $gutter: 6.25%;
 $margin-between-rows: 6.25%;
@@ -104,14 +104,14 @@ $query-desktop: 920px;
 
 ### Responsive Classes
 
-```sass
-[only-mobile] { /* Shows this content only in mobile */}
-[only-tablet] { /* Shows this content only in tablet */}
-[only-desktop] { /* Shows this content only in desktop */}
+```css
+[only-mobile] { /* Shows this content only in mobile */ }
+[only-tablet] { /* Shows this content only in tablet */ }
+[only-desktop] { /* Shows this content only in desktop */ }
 
-[hidden-mobile] { /* Hides this content only in mobile */}
-[hidden-tablet] { /* Hides this content only in tablet */}
-[hidden-desktop] { /* Hides this content only in desktop */}
+[hidden-mobile] { /* Hides this content only in mobile */ }
+[hidden-tablet] { /* Hides this content only in tablet */ }
+[hidden-desktop] { /* Hides this content only in desktop */ }
 ```
 
 Please note that tablet size is between the mobile and desktop, taken from it’s variables.

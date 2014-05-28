@@ -48,7 +48,7 @@ $query-desktop: 920px;
 .grid {
 	@include centerBlock();
 	display: block;
-	max-width: 960px;
+	max-width: $content-max-width;
 	font-size: 0;
 	background-color: #F7F7F7;
 
