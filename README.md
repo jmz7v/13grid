@@ -15,7 +15,7 @@ I’m not sure if this is the first open source 13 grid column, I started it at 
 ### To-Do
 
 - Docs for usage
-- Add media queries
+
 
 ## 13 columns
 
@@ -88,8 +88,40 @@ Percentage width: 56.625% — Magic number may be?
 
 ## Usage
 
+### Variables
 
+Modify this to fit your needs
 
+```sass
+$content-max-width: 960px;
+$side-padding: 15px;
+$gutter: 6.25%;
+$margin-between-rows: 6.25%;
+$query-mobile: 600px;
+$query-desktop: 920px;
+
+```
+
+### Responsive Classes
+
+```sass
+[only-mobile] { /* Shows this content only in mobile */}
+[only-tablet] { /* Shows this content only in tablet */}
+[only-desktop] { /* Shows this content only in desktop */}
+
+[hidden-mobile] { /* Hides this content only in mobile */}
+[hidden-tablet] { /* Hides this content only in tablet */}
+[hidden-desktop] { /* Hides this content only in desktop */}
+```
+
+Please note that tablet size is between the mobile and desktop, taken from it’s variables.
+
+To add one of the previous classes add the markup to your HTML element like this
+```html
+<div class="myDiv" only-mobile>
+	<p>Only visible in mobile</p>
+</div>
+```
 
 
 

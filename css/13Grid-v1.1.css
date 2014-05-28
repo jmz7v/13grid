@@ -299,8 +299,8 @@ body, html {
     color: #ffffff;
     font-family: lato;
     font-weight: 300;
-    padding-left: 0;
-    padding-right: 0;
+    padding-left: 15px;
+    padding-right: 15px;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;

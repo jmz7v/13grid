@@ -13,7 +13,6 @@
 @import 'odyssey';
 
 $side-padding: 15px; /*ALWAYS 15px, no matter what*/
-$side-padding: 0;
 $gutter: 6.25%; /*60px at full width*/
 $margin-between-rows: 6.25%;
 
@@ -186,7 +185,7 @@ $query-desktop: 920px;
 	[only-tablet], [only-desktop], [hidden-mobile] {
 		display: none !important;
 	}
-	
+
 	[only-mobile] {
 		display: block;
 	}
