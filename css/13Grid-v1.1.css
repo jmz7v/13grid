@@ -345,3 +345,23 @@ body, html {
   .grid .grid_onesixth:last-child,
   .grid .grid_twothirds:last-child {
     margin-right: 0; }
+
+@media all and (max-width: 480px) {
+  .grid .grid_onehalf,
+  .grid .grid_onethird {
+    width: 87.5%;
+    margin-right: 0; }
+  .grid .grid_onefourth {
+    width: 40.625%; }
+  .grid .grid_onefourth:nth-child(2n+2) {
+    margin-right: 0; }
+  .grid .grid_onehalf + .grid_onefourth {
+    margin-right: 6.25%; }
+  .grid .grid_onesixth {
+    width: 25%;
+    margin-right: 0; }
+  .grid .grid_onesixth:nth-child(2n+2) {
+    margin-right: 0; }
+  .grid .grid_twothirds {
+    width: 87.5%;
+    margin-right: 0; } }
