@@ -346,6 +346,9 @@ body, html {
   .grid .grid_twothirds:last-child {
     margin-right: 0; }
 
+[hidden] {
+  display: none !important; }
+
 @media all and (max-width: 600px) {
   /*	.grid {
   		.grid_onehalf,
@@ -377,11 +380,14 @@ body, html {
   			margin-right: 0;
   		}
   	}*/
-  /*^FUCK THIS*/
+  /*FUCK THIS*/
   .grid .grid_onehalf,
   .grid .grid_onethird,
   .grid .grid_onefourth,
   .grid .grid_onesixth,
   .grid .grid_twothirds {
     width: 87.5%;
-    margin-right: 0; } }
+    margin-right: 0; }
+
+  [hidden-mobile] {
+    display: none !important; } }
