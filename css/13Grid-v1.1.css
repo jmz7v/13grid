@@ -346,22 +346,42 @@ body, html {
   .grid .grid_twothirds:last-child {
     margin-right: 0; }
 
-@media all and (max-width: 480px) {
+@media all and (max-width: 600px) {
+  /*	.grid {
+  		.grid_onehalf,
+  		.grid_onethird {
+  			width: 87.5%;
+  			margin-right: 0;
+  		}
+  		.grid_onefourth {
+  			width: 40.625%;	
+  		}
+  		.grid_onefourth:nth-child(2n+2) {
+  			margin-right: 0;
+  		}
+  		.grid_onehalf + .grid_onefourth {
+  			margin-right: $gutter;
+  		}
+  
+  		.grid_onesixth {
+  			width: 25%;
+  			margin-right: 0;	
+  		}
+  		.grid_onesixth:nth-child(2n+2) {
+  			margin-right: 0;
+  
+  		}
+  
+  		.grid_twothirds {
+  			width: 87.5%;
+  			margin-right: 0;
+  		}
+  	}*/
+  /*FUCK THIS*/
   .grid .grid_onehalf,
-  .grid .grid_onethird {
-    width: 87.5%;
-    margin-right: 0; }
-  .grid .grid_onefourth {
-    width: 40.625%; }
-  .grid .grid_onefourth:nth-child(2n+2) {
-    margin-right: 0; }
-  .grid .grid_onehalf + .grid_onefourth {
-    margin-right: 6.25%; }
-  .grid .grid_onesixth {
-    width: 25%;
-    margin-right: 0; }
-  .grid .grid_onesixth:nth-child(2n+2) {
-    margin-right: 0; }
+  .grid .grid_onethird,
+  .grid .grid_onefourth,
+  .grid .grid_onesixth,
   .grid .grid_twothirds {
     width: 87.5%;
     margin-right: 0; } }

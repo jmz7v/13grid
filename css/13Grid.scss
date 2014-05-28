@@ -17,7 +17,7 @@ $side-padding: 0;
 $gutter: 6.25%; /*60px at full width*/
 $margin-between-rows: 6.25%;
 
-$width-breakpoint-phone: 480px;
+$width-breakpoint-phone: 600px;
 
 
 @mixin centerBlock() {
@@ -135,7 +135,7 @@ $width-breakpoint-phone: 480px;
 
 @media all and (max-width: $width-breakpoint-phone) {
 	
-	.grid {
+/*	.grid {
 		.grid_onehalf,
 		.grid_onethird {
 			width: 87.5%;
@@ -164,8 +164,18 @@ $width-breakpoint-phone: 480px;
 			width: 87.5%;
 			margin-right: 0;
 		}
+	}*/
 
+	/*FUCK THIS*/
 
-
+	.grid {
+		.grid_onehalf,
+		.grid_onethird,
+		.grid_onefourth,
+		.grid_onesixth,
+		.grid_twothirds {
+			width: 87.5%;
+			margin-right: 0;
+		}
 	}
 }
