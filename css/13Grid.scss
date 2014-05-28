@@ -18,6 +18,7 @@ $gutter: 6.25%; /*60px at full width*/
 $margin-between-rows: 6.25%;
 
 $query-mobile: 600px;
+$query-desktop: 920px;
 
 
 @mixin centerBlock() {
@@ -134,11 +135,8 @@ $query-mobile: 600px;
 
 
 
-[hidden] {
-	display: none !important;
-}
 
-
+/* Phone */
 @media all and (max-width: $query-mobile) {
 	
 /*	.grid {
@@ -185,7 +183,38 @@ $query-mobile: 600px;
 		}
 	}
 
-	[hidden-mobile] {
+	[only-tablet], [only-desktop], [hidden-mobile] {
 		display: none !important;
 	}
+	
+	[only-mobile] {
+		display: block;
+	}
+}
+
+/* Narrow deskops, tablets might be */
+@media all and (min-width: $query-mobile) and (max-width: $query-desktop) {
+
+	[only-mobile], [only-desktop], [hidden-tablet] {
+		display: none !important;
+	}
+
+	[only-tablet] {
+		display: block;
+	}
+}
+
+/* Only desktops */
+@media all and (min-width: $query-desktop) {
+
+
+	[only-mobile], [only-tablet], [hidden-desktop] {
+		display: none !important;
+	}
+
+	[only-desktop] {
+		display: block;
+	}
+
+
 }

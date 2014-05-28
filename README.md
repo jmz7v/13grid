@@ -86,6 +86,8 @@ Default width @ 960px: 540px
 Percentage width: 56.625% — Magic number may be?
 
 
+## Usage
+
 
 
 

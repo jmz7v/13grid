@@ -6,8 +6,8 @@
 
 	<!-- 
 	Current Version:
-	v1.0
-	sass -w 13Grid.scss:13Grid-v1.0.css
+	v1.1
+	sass -w 13Grid.scss:13Grid-v1.1.css
 	 -->
 
 	<!-- Custom CSS -->
@@ -80,6 +80,15 @@
 			color: #ffffff;
 		}
 
+		@media all and (max-width: 600px) {
+			.button {
+				margin-left: auto;
+				margin-right: auto;
+				display: block;
+				width: 87.5%;
+			}	
+		}
+
 	</style>
 
 	<!-- Lato -->
@@ -92,14 +101,22 @@
 <p class="text">A 13 column CSS grid by <a href="http://jmz7v.com" target="_blank">Julio Montaño</a></p>
 
 <div class="buttonstop">
-	<a href="https://github.com/Jmz7v/13Grid/raw/master/css/13Grid-v1.0.css" class="button">Download .CSS</a>
-	<a href="https://github.com/Jmz7v/13Grid" class="button">View on GitHub</a>
-	<a href="https://dl.dropboxusercontent.com/u/59423020/13Grid.sketch.zip" class="button">.Sketch</a>
+	<a href="https://github.com/Jmz7v/13Grid/raw/master/css/13Grid-v1.0.css" class="button border-box">Download .CSS</a>
+	<a href="https://github.com/Jmz7v/13Grid" class="button border-box">View on GitHub</a>
+	<a href="https://dl.dropboxusercontent.com/u/59423020/13Grid.sketch.zip" class="button border-box">.Sketch</a>
 </div>
 
 <div class="grid">
 	<div class="row">
-		<div class="grid_one" hidden="true">Full Width<br>1/1</div>
+		<div class="grid_one"><p>Full Width 1/1</p></div>
+		<div class="grid_one">
+			<p only-mobile>mobile</p>
+			<p only-tablet>tablet</p>
+			<p only-desktop>desktop</p>
+			<p hidden-mobile>tablet &amp; desktop</p>
+			<p hidden-tablet>mobile &amp; desktop</p>
+			<p hidden-desktop>tablet &amp; mobile</p>
+		</div>
 	</div>
 	<div class="row">
 		<div class="grid_onehalf">1/2</div>
@@ -279,9 +296,9 @@
 
 
 <div class="buttonsbottom">
-	<a href="https://github.com/Jmz7v/13Grid/raw/master/css/13Grid-v1.0.css" class="button">Download .CSS</a>
-	<a href="https://github.com/Jmz7v/13Grid" class="button">View on GitHub</a>
-	<a href="https://dl.dropboxusercontent.com/u/59423020/13Grid.sketch.zip" class="button">.Sketch</a>
+	<a href="https://github.com/Jmz7v/13Grid/raw/master/css/13Grid-v1.0.css" class="button border-box">Download .CSS</a>
+	<a href="https://github.com/Jmz7v/13Grid" class="button border-box">View on GitHub</a>
+	<a href="https://dl.dropboxusercontent.com/u/59423020/13Grid.sketch.zip" class="button border-box">.Sketch</a>
 	<p class="text">Back to <a href="http://jmz7v.com">jmz7v.com</a></p>
 </div>
 
