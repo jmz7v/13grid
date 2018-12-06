@@ -2,9 +2,7 @@
 
 A 13 column grid.
 
-![Screenshot Clean](/images/13grid.png)
-
-
+[[https://github.com/jmz7v/13grid/blob/master/images/13Grid.png|alt=13grid]]
 
 ## WHY?
 
