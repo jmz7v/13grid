@@ -1,8 +1,8 @@
-# 13Grid
+# 13grid
 
 A 13 column grid.
 
-![Screenshot Clean](/images/13Grid.png)
+![Screenshot Clean](/images/13grid.png)
 
 
 
@@ -31,7 +31,7 @@ The standard size for the whole grid is 960px.
 
 ### The Unit
 
-The unit is also the gutter. There are 13 units in 13Grid. Woah.
+The unit is also the gutter. There are 13 units in 13grid. Woah.
 
 Default width @ 960px: 60px
 
@@ -127,10 +127,10 @@ To add one of the previous classes add the markup to your HTML element like this
 
 ## Acknowledgements
 
-13Grid was built on top of [Normalize.css](https://github.com/necolas/normalize.css/) by Nicolas Gallagher. 
+13grid was built on top of [Normalize.css](https://github.com/necolas/normalize.css/) by Nicolas Gallagher. 
 
-13Grid uses and it was planned to use alongside [Odyssey.css](https://github.com/Jmz7v/Odyssey.scss) by Julio Montaño. 
+13grid uses and it was planned to use alongside [Odyssey.css](https://github.com/Jmz7v/Odyssey.scss) by Julio Montaño. 
 
-13Grid was designed in [Sketch](http://bohemiancoding.com/sketch/).
+13grid was designed in [Sketch](http://bohemiancoding.com/sketch/).
 
-13Grid uses [SASS](http://sass-lang.com). The compiled version of 13Grid is always up-to-date and ready to use.
+13grid uses [SASS](http://sass-lang.com). The compiled version of 13grid is always up-to-date and ready to use.
