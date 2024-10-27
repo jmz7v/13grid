@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
     <title>13grid - Responsive Grid System by Julio Montaño</title>
-    <link rel="stylesheet" type="text/css" href="13grid-v1.0.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, user-scalable=1"/>
+    <link rel="stylesheet" type="text/css" href="css/13grid-v1.1.css" />
 
+    <!-- Custom CSS -->
     <style type="text/css">
+      :root {
+        --font-family: "IBM Plex Mono", "Inter", monospace;
+      }
+
       body {
         background-color: #f0f0f0;
+        font-family: "IBM Plex Mono", monospace;
       }
 
       .grid {
@@ -19,8 +23,8 @@
       h1 {
         font-size: 2rem;
         text-align: center;
-        font-family: 'IBM Plex Sans', sans-serif;
-        font-weight: 500;
+        font-family: var(--font-family);
+        font-weight: 700;
         margin-top: 5rem;
         color: #333333;
       }
@@ -29,14 +33,14 @@
         margin-top: 1rem;
         font-size: 1.125rem;
         text-align: center;
-        font-family: 'IBM Plex Sans', sans-serif;
-        font-weight: 500;
+        font-family: var(--font-family);
+        font-weight: 300;
         color: #666666;
       }
 
       .text a {
         text-decoration: none;
-        color: #00BFFF;
+        color: #00bfff;
         color: #33a3ff;
       }
 
@@ -49,7 +53,6 @@
         text-align: center;
         margin-bottom: 2rem;
       }
-
       .buttonsbottom {
         padding: 4rem 0;
         text-align: center;
@@ -63,8 +66,8 @@
         box-shadow: inset 0 0 0 1px #33a3ff;
         text-decoration: none;
         font-size: 1.125rem;
-        font-weight: 500;
-        font-family: 'IBM Plex Sans', sans-serif;
+        font-weight: 300;
+        font-family: var(--font-family);
         color: #33a3ff;
       }
 
@@ -72,35 +75,50 @@
         background-color: #33a3ff;
         color: #ffffff;
       }
+
+      @media all and (max-width: 600px) {
+        .button {
+          margin-left: auto;
+          margin-right: auto;
+          display: block;
+          width: 87.5%;
+        }
+      }
     </style>
 
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,500|IBM+Plex+Serif:300,400,500,700" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
 
-    <!-- Favicons -->
-    <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
-    <link rel="manifest" href="/favicons/site.webmanifest">
-    <link rel="mask-icon" href="/favicons/safari-pinned-tab.svg" color="#00bfff">
-    <link rel="shortcut icon" href="/favicons/favicon.ico">
-    <meta name="msapplication-TileColor" content="#00bfff">
-    <meta name="msapplication-config" content="/favicons/browserconfig.xml">
-    <meta name="theme-color" content="#ffffff">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <h1>13grid</h1>
-    <p class="text">A 13 column CSS grid by <a href="https://jmz7v.com">Julio Montaño</a></p>
+    <p class="text">A 13 column CSS grid</p>
+
+    <p class="text border-box p-4 border-2 border-gray-300 rounded-md">
+      This is a 10 year old project, web design has evolved a lot since then but
+      there may be some useful ideas behind having a web-oriented grid system
+      that divides a space or screen into 13 columns.
+    </p>
 
     <div class="buttonstop">
-      <a href="https://github.com/Jmz7v/13grid/raw/master/css/13grid-v1.0.css" class="button">Download .CSS</a>
-      <a href="https://github.com/Jmz7v/13grid" class="button">View on GitHub</a>
-      <a href="https://dl.dropboxusercontent.com/u/59423020/13grid.sketch.zip" class="button">.Sketch</a>
+      <a href="https://github.com/Jmz7v/13grid" class="button border-box"
+        >View on GitHub</a
+      >
+      <a
+        href="https://dl.dropboxusercontent.com/u/59423020/13grid.sketch.zip"
+        class="button border-box"
+        >.Sketch File</a
+      >
     </div>
 
     <div class="grid">
       <div class="row">
-        <div class="grid_one">Full Width<br>1/1</div>
+        <div class="grid_one"><p>Full Width 1/1</p></div>
       </div>
       <div class="row">
         <div class="grid_onehalf">1/2</div>
@@ -141,7 +159,6 @@
         <div class="grid_onehalf">1/2</div>
       </div>
 
-
       <div class="row">
         <div class="grid_onethird">1/3</div>
         <div class="grid_onesixth">1/6</div>
@@ -177,7 +194,6 @@
         <div class="grid_onesixth">1/6</div>
         <div class="grid_onethird">1/3</div>
       </div>
-
 
       <div class="row">
         <div class="grid_onethird">1/3</div>
@@ -189,8 +205,6 @@
         <div class="grid_onesixth">1/6</div>
         <div class="grid_onethird">1/3</div>
       </div>
-
-
 
       <div class="row">
         <div class="grid_onefourth">1/4</div>
@@ -275,14 +289,29 @@
         <div class="grid_onesixth">1/6</div>
         <div class="grid_onesixth">1/6</div>
         <div class="grid_twothirds">2/3</div>
+      </div>
+      <div class="row">
+        <div class="grid_one">
+          <p only-mobile>mobile</p>
+          <p only-tablet>tablet</p>
+          <p only-desktop>desktop</p>
+          <p hidden-mobile>tablet &amp; desktop</p>
+          <p hidden-tablet>mobile &amp; desktop</p>
+          <p hidden-desktop>tablet &amp; mobile</p>
+        </div>
       </div>
     </div>
 
     <div class="buttonsbottom">
-      <a href="https://github.com/Jmz7v/13grid/raw/master/css/13grid-v1.0.css" class="button">Download .CSS</a>
-      <a href="https://github.com/Jmz7v/13grid" class="button">View on GitHub</a>
-      <a href="https://dl.dropboxusercontent.com/u/59423020/13grid.sketch.zip" class="button">.Sketch</a>
-      <p class="text">Back to <a href="https://jmz7v.com">jmz7v.com</a></p>
+      <a href="https://github.com/Jmz7v/13grid" class="button border-box"
+        >View on GitHub</a
+      >
+      <a
+        href="https://dl.dropboxusercontent.com/u/59423020/13grid.sketch.zip"
+        class="button border-box"
+        >.Sketch File</a
+      >
+      <p class="text">Back to <a href="http://jmz7v.com">jmz7v.com</a></p>
     </div>
   </body>
 </html>
