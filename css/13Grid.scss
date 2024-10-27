@@ -9,8 +9,8 @@
  */
 
 
-@import 'normalize';
-@import 'odyssey';
+@use 'normalize';
+@use 'odyssey';
 
 $side-padding: 15px; /*ALWAYS 15px, no matter what*/
 $gutter: 6.25%; /*60px at full width*/
@@ -48,7 +48,7 @@ $query-desktop: 920px;
 .grid {
 	@include centerBlock();
 	display: block;
-	max-width: $content-max-width;
+	max-width: odyssey.$content-max-width;
 	font-size: 0;
 	background-color: #F7F7F7;
 
@@ -71,7 +71,7 @@ $query-desktop: 920px;
 	.grid_twothirds {
 		@include centerBlock();
 		@include sidePadding();
-		@include border-box();
+		@include odyssey.border-box();
 		@include commonValues();	
 	}
 
